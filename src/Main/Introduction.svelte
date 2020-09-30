@@ -14,7 +14,7 @@
 <h3>Useful Quotes</h3>
     <ul>
     {#each quotes as j}
-    <li>{j}</li>
+    <li><span style="font-weight: bold;">Source: {j.source}.</span> {j.text}</li>
     {/each}
     </ul>
 <!--<button on:click={() => clearCookie()}>Clear Cookie</button> -->
