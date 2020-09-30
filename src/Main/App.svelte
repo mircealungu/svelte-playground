@@ -9,6 +9,7 @@ function getCookie() {
 	return document.cookie
 	
 }
+
 function setCookie(username) {
 	document.cookie = username
 	location.reload()
@@ -23,6 +24,7 @@ const todo = [
 	"First Meeting with Mircea",
 	"If all we figure out in the first meeting is: we know what we're making, we're good!",
 	"Come up with a meeting agenda",
+	"PLAN A: An extension that redirects you to our microlearning website, then back to the extension",
 	"Come up with list of ideas / Brainstorm app ideas",
 	"Read both papers provided by Mircea",
 	"Introduction to Svelte Scrimba (John)",
@@ -50,35 +52,6 @@ selected = home()
 
 </script>
 
-<style>
-	.sized {
-		height: 100%;
-		widows: 100%;
-	}
-	.intro {
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		widows: 100%;
-		align-items: center;
-		justify-content: center;
-	}
-
-
-
-	.intro input, button {
-		justify-self: center;
-		height: 10%;
-		width: 20%;
-		text-align: center;
-	}
-
-	
-</style>
-
-
-
-
 
 <div class="sized">
 {#if getCookie() === (undefined || "")}
@@ -98,4 +71,30 @@ selected = home()
 </div>
 {/if}
 </div>
+
+
+<style>
+	.sized {
+		height: 100%;
+		widows: 100%;
+	}
+
+	.intro {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		widows: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.intro input, button {
+		justify-self: center;
+		height: 10%;
+		width: 20%;
+		text-align: center;
+	}
+	
+</style>
+
 
