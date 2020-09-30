@@ -1,7 +1,7 @@
 <script>
 import Component from "../Basics/Component.svelte";
 import John from "../Basics/John.svelte";
-import Introduction from "./Introduction.svelte";
+import Introduction from "../Admin_stuff/Introduction.svelte";
 import Ideas from '../Admin_stuff/Ideas.svelte'
 
 

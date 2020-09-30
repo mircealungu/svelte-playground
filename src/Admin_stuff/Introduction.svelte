@@ -1,6 +1,7 @@
 <script>
     import todo from './todo.js'
     import quotes from './quotes.js'
+    import agenda from './agenda.js'
     export let name, clearCookie
 </script>
 
@@ -19,4 +20,12 @@
     <li><span style="font-weight: bold;">Source: {j.source}.</span> {j.text}</li>
     {/each}
     </ul>
+
+
+<h3>Meeting Agenda</h3>
+<ol>
+{#each agenda as i}
+    <li>{i}</li>
+{/each}
+</ol>
 <!--<button on:click={() => clearCookie()}>Clear Cookie</button> -->
