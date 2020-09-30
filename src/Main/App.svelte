@@ -41,12 +41,17 @@ const todo = [
 	"Start making a website?",
 ]
 
+const quotes = [
+	"Based on these different outcomes, future implementations of the extension may consider different, specialized versions which cater to different types of users. Currently, Aiki is designed as an ultra-simple one-fits-all solution, put specializations are worth exploring: for instance design with a focus on promoting awareness and/or reflection a focus on distracting from procrastination behavior, or a focus on maximizing for engagement with the learning tasks.",
+	"When inquiring about this further in this and other participants’ post-study interviews, we discussed a design goal of designing the extension / learning environment to provide positive feedback in order to create positive associations with the microlearning tasks.",
+]
+
 let name = getCookie()
-const home = () => ({page: Introduction, props: {name: name, clearCookie: clearCookie, todo: todo}})
+const home = () => ({page: Introduction, props: {name: name, clearCookie: clearCookie, todo: todo, quotes: quotes}})
 
 let options = [
 	{name: "Component", page: Component},
-	{name: "John", page: John}
+	{name: "John", page: John},
 ],
 selected = home()
 
