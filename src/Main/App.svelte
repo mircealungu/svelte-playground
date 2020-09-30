@@ -21,6 +21,7 @@ const clearCookie = () => {
 
 const todo = [
 	"First Meeting with Mircea",
+	"If all we figure out in the first meeting is: we know what we're making, we're good!",
 	"Come up with a meeting agenda",
 	"Come up with list of ideas / Brainstorm app ideas",
 	"Read both papers provided by Mircea",
