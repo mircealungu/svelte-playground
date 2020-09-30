@@ -1,5 +1,6 @@
 <script>
 import Component from "../Basics/Component.svelte";
+import John from "../Basics/John.svelte";
 import Introduction from "./Introduction.svelte";
 
 
@@ -22,7 +23,8 @@ let name = getCookie()
 const home = () => ({page: Introduction, props: {name: name, clearCookie: clearCookie}})
 
 let options = [
-	{name: "Component", page: Component}
+	{name: "Component", page: Component},
+	{name: "John", page: John}
 ],
 selected = home()
 
