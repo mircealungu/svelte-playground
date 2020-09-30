@@ -1,5 +1,7 @@
 <script>
-    export let name, clearCookie, todo, quotes
+    import todo from './todo.js'
+    import quotes from './quotes.js'
+    export let name, clearCookie
 </script>
 
 <h1>Hello {name}!</h1>
