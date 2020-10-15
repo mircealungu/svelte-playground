@@ -3,6 +3,11 @@ import Component from "../Basics/Component.svelte";
 import John from "../Basics/John.svelte";
 import Introduction from "../Admin_stuff/Introduction.svelte";
 import Ideas from '../Admin_stuff/Ideas.svelte'
+import StartingOut from "../Basics/StartingOut.svelte";
+import Reactivity from "../Basics/Reactivity.svelte";
+import Props from "../Basics/Props.svelte";
+import Logic from "../Basics/Logic.svelte";
+import Events from "../Basics/Events.svelte";
 
 
 function getCookie() {
@@ -55,8 +60,12 @@ const home = () => ({page: Introduction, props: {name: name, clearCookie: clearC
 
 let options = [
 	{name: "Component", page: Component},
-	{name: "John", page: John},
-	{name: "Ideas", page: Ideas}
+	{name: "Ideas", page: Ideas},
+	{name: "Starting Out", page: StartingOut},
+	{name: "Reactivity", page: Reactivity},
+	{name: "Props", page: Props},
+	{name: "Events", page: Events},
+	{name: "Logic", page: Logic}
 ],
 selected = home()
 
